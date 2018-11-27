@@ -11,6 +11,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+		.container {
+          position: relative;
+          text-align: center;
+          color: white;
+                  }
+	    /* Centered text */
+        .centered {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+                  }
+				  
+		   A:hover { 
+		   COLOR: gray;
+		   TEXT-DECORATION: none;
+		   font-weight: bold;
+		   }
+        </style>
 	</head>
 	<body class="is-preload">
 
@@ -28,8 +48,8 @@
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#work">About</a></li>
-								<li><a href="#about">Work</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#work">Work</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -40,19 +60,43 @@
 					<div id="main">
 
 						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
+							<article id="about">
+								<h2 class="major">About</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<p>Hello! I am Stuart Fuller. A Computer Games Development student, currently in my second year of a four year course at Staffordshire Univeristy. Welcome to my portfolio site!</p>
+								<p>I specialise in C++ and Unreal Engine Blueprints but can also complete other tasks. Take a look at my work <a href="#work">here!</a></p>
 							</article>
 
 						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+							<article id="work">
+								<h2 class="major">Work</h2>
+								<h4> On this page shows the projects I have worked on</h4>
+								
+								<div class="container">
+								<span class="image main"><img src="images/spacesurvival.jpg" alt="" /></span>
+								<div class="centered"><a href="#spacesurvival"><h3>Space Survival</h3></a></div>
+								</div>
+								
+								
 							</article>
+							
+						<!-- Space Survival -->
+						    <article id="spacesurvival">
+							<div align="center">
+								<h2 class="major">SpaceSurvival</h2>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/thL04SjXyMo?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							
+								<p>This project was created in C++ using a framework provided to us by the university.</br>
+								The Aim of the game is do get the highest score you can without dying</p>
+							
+							     <a href="http://kenney.nl/assets/space-shooter-extension" target="_blank" class="button">Art Assets</a>
+								 <a href="http://kenney.nl/assets/digital-audio" target="_blank" class="button">Sound Assets</a>
+						    </div>
+							 
+							
+							
+							</article>
+							
 
 						<!-- Contact -->
 							<article id="contact">
