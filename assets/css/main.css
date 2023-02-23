@@ -1636,3 +1636,43 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+/*Gallery*/
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+  }
+  
+  .gallery-item {
+	position: relative;
+	overflow: hidden;
+  }
+  
+  .gallery-item img {
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: transform 0.2s ease-in-out;
+  }
+  
+  
+  
+  .gallery-item:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	opacity: 0;
+	transition: opacity 0.2s ease-in-out;
+  }
+  
+  .container {
+	text-align: center;
+  }
+  
+  
